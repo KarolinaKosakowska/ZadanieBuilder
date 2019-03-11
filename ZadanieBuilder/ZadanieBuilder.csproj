@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Avensis.cs" />
+    <Compile Include="Corolla.cs" />
+    <Compile Include="Director.cs" />
+    <Compile Include="ICarBuilder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
