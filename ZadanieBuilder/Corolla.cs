@@ -8,19 +8,19 @@ namespace ZadanieBuilder
 {
     public class Corolla : ICarBuildable
     {
-
+        public string CarModel { get; set; } = "Corolla";
+      
         public string BuildChassis()
         {
-            return "Podwozie Corolla";
+            return "Podwozie";
         }
         public string BuildEngine()
         {
-            return "Silnik Corolla";
+            return "Silnik";
         }
         public string BuildBody()
         {
-           return "Nadwozie Corolla";
+           return "Nadwozie";
         }
-
     }
 }

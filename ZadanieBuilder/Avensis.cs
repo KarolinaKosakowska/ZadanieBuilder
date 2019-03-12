@@ -7,21 +7,20 @@ using System.Threading.Tasks;
 namespace ZadanieBuilder
 {
    public  class Avensis : ICarBuildable
-    {      
-        
+    {
+        public string CarModel { get; set; } = "Avensis";
+
         public string BuildChassis()
         {
-            return "Podwozie Avensis";
+            return "Podwozie";
         }
         public string BuildEngine()
         {
-            return "Silnik Avensis";
+            return "Silnik";
         }
         public string BuildBody()
         {
-          return  "Nadwozie Avensis";
+            return  "Nadwozie";
         }
-
-
     }
 }

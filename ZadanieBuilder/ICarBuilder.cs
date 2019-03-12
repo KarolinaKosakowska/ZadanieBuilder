@@ -7,6 +7,6 @@ namespace ZadanieBuilder
         string BuildBody();
         string BuildChassis();
         string BuildEngine();
-        
+        string CarModel { get; set; }
     }
 }

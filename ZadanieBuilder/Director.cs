@@ -20,18 +20,12 @@ namespace ZadanieBuilder
             builder.BuildChassis();
             builder.BuildEngine();
             builder.BuildBody();
-
         }
+
         public string GetBuildedParts()
         {
-            string CompletedParts;
-            CompletedParts = $"{builder.BuildChassis()} {builder.BuildEngine()} {builder.BuildBody()}";
+            string CompletedParts = $"{builder.BuildChassis()} {builder.CarModel}  {builder.BuildEngine()} {builder.CarModel}  {builder.BuildBody()} {builder.CarModel} ";
             return CompletedParts;
-
         }
-
-
-
     }
-
 }
