@@ -22,10 +22,11 @@ namespace ZadanieBuilder
             builder.BuildBody();
         }
 
-        public string GetBuildedParts()
+        public void GetBuildedParts()
         {
-            string CompletedParts = $"{builder.BuildChassis()} {builder.CarModel}  {builder.BuildEngine()} {builder.CarModel}  {builder.BuildBody()} {builder.CarModel} ";
-            return CompletedParts;
+            foreach (string part in builder.CompletedParts)
+            Console.Write($"{part} {builder.CarModel}  ");
+            Console.WriteLine();           
         }
     }
 }

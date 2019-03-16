@@ -8,5 +8,8 @@ namespace ZadanieBuilder
         string BuildChassis();
         string BuildEngine();
         string CarModel { get; set; }
+        List<string> CompletedParts { get; set; }
+        
+
     }
 }

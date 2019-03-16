@@ -13,10 +13,10 @@ namespace ZadanieBuilder
             Console.WriteLine("Wytwórnia Toyoty");
             Director director = new Director(new Avensis());
             director.Construct();
-            Console.WriteLine(director.GetBuildedParts());
+            director.GetBuildedParts();
             director = new Director(new Corolla());
             director.Construct();
-            Console.WriteLine(director.GetBuildedParts());
+            director.GetBuildedParts();
             //wynik
             //Wytwórnia Toyoty
             //Podwozie Avensis Silnik Avensis Nadwozie Avensis

@@ -8,19 +8,24 @@ namespace ZadanieBuilder
 {
     public class Corolla : ICarBuildable
     {
-        public string CarModel { get; set; } = "Corolla";
-      
+        public string CarModel { get; set; } = "Corolla";      
+        public List<string> CompletedParts { get => _completedParts; set => _completedParts = value; }
+        private List<string> _completedParts = new List<string>();
+
         public string BuildChassis()
         {
+            CompletedParts.Add("Podwozie");
             return "Podwozie";
         }
         public string BuildEngine()
         {
+            CompletedParts.Add("Silnik");
             return "Silnik";
         }
         public string BuildBody()
         {
-           return "Nadwozie";
+            CompletedParts.Add("Nadwozie");
+            return "Nadwozie";
         }
     }
 }
